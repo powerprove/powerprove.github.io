@@ -1,5 +1,3 @@
----
----
 
 make_recent_date = () ->
     for label in $('#recent-list span.label')
