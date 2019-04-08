@@ -9,28 +9,23 @@ paginate: 10
 name: powerprove
 desc: Yet another simple theme for Jekyll.
 author:
-  name: neizod
-  avatar: //gravatar.com/avatar/daa1cc36ed2ab0d13045d5cd2431cde9?s=320
-  profile: |
-    Just another ordinary grad student in computer engineering.
-    I'm interest in programming language, algorithm, and mathematics.
-
-    I live in Chiang Mai or Bangkok, Thailand.
-    And you may found me around BarCamp event ;D
+  name: powerprove
+  avatar: https://github.com/powerprove/powerprove.github.io/tree/master/images/avatar.png
+  profile: null2root
   socials:
     facebook:
-    twitter: //twitter.com/neizod
+    twitter: //twitter.com/powerprov3
     google-plus:
-    github: //github.com/neizod
-    stack-overflow: //stackoverflow.com/users/889578/neizod
+    github: //github.com/powerprove
+    stack-overflow:
     instagram:
     pinterest:
-    steam: //steamcommunity.com/id/neizod/
+    steam:
 license: MIT License
 
 
 # theme variables, change this to make site looks best.
-baseurl: 
+baseurl:
 paginate: 10
 
 
