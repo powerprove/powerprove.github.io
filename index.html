@@ -19,7 +19,7 @@
       {% else %}
         {% capture thumbnail %}{{ post.thumbnail | prepend: site.baseurl }}{% endcapture %}
       {% endif %}
-      <img class="img-responsive img-rounded" src="{{ thumbnail }}">
+      <img class="img-responsive img-rounded"  src="{{ thumbnail }}">
     {% else %}
       <h1 class="poorman-thumbnail"
           style="background: {% cycle 'c': "#48c", "#fa4", "#5b5", "#d54" %};">

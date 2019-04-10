@@ -54,6 +54,7 @@ title: Projects
         {% unless forloop.last %}&nbsp;{% endunless %}
       {% endfor %}
     </p>
+    {{ project.member | markdownify }}
     {{ project.desc | markdownify }}
   </div>
   <div class="clearfix"></div>
