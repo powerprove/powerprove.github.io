@@ -9,8 +9,8 @@ paginate: 10
 name: powerprove
 desc: Yet another simple theme for Jekyll.
 author:
-  name: powerprove
-  avatar: https://github.com/powerprove/powerprove.github.io/tree/master/images/avatar.png
+  name: neizod
+  avatar: /images/avatar.png
   profile: null2root
   socials:
     facebook:
@@ -21,7 +21,7 @@ author:
     instagram:
     pinterest:
     steam:
-license: MIT License
+license: MIT License neizod,
 
 
 # theme variables, change this to make site looks best.
