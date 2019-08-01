@@ -7,3 +7,12 @@
   member: null2root project
   desc: >
           Broswer의 Webkit jsc 취약점 분석 및 공격 연구
+
+- name: HunterJW
+  url: /2019/08/01/HunterJW.html
+  date: 2019 5~7
+  languages: [korea]
+  frameworks: [bugbounty]
+  member: powerprove, p4rkJW
+  desc: >
+          버그바운티 활동
