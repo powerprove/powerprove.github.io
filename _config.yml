@@ -31,7 +31,6 @@ paginate: 10
 
 # system variables, do not change unless you knew what's it does.
 paginate_path: page/:num
-highlighter: pygments
 markdown: redcarpet
 redcarpet:
   extensions: ["tables"]
