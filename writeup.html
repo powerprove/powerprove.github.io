@@ -1,0 +1,28 @@
+---
+title: Blog write up
+---
+
+  <div class="col-xs-12">
+    <ul class="list-group" id="tags">
+    {% for tag in site.ctf %}
+      <li class="list-group-item">
+        <a class="list-toggle" href="#">
+          <i class="fa fa-plus-square"></i>
+          <span class="ord-alph">{{ ctf[0] }}</span>
+        </a>
+        <span class="badge ord-freq">{{ ctf[1].size }}</span>
+        <ul class="list-group hidden">
+        {% for post in ctf[1] %}
+          <li class="list-group-item">
+            <span class="label label-info">
+              {{ post.date | date_to_string }}
+            </span>
+            <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+          </li>
+        {% endfor %}
+        </ul>
+      </li>
+    {% endfor %}
+    </ul>
+  </div>
+</div>

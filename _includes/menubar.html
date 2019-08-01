@@ -10,6 +10,15 @@
         </span>
       </a>
     </li>
+    <li {% if page.url == "/writeup.html" %}class="active"{% endif %}>
+      <a href="{{ site.baseurl }}/writeup.html">
+        <i class="fa fa-fw fa-archive"></i>
+        Writeup
+        <span class="badge hidden-xs pull-right">
+          {{ site.posts | size }}
+        </span>
+      </a>
+    </li>
     <li {% if page.url == "/tags.html" %}class="active"{% endif %}>
       <a href="{{ site.baseurl }}/tags.html">
         <i class="fa fa-fw fa-tags"></i>

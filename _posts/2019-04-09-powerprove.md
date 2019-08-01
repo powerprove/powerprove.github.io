@@ -11,6 +11,8 @@ I love pwnable... and game!
 ## Project
 - HowToBrowser [Link](/2019/04/10/howtobrowser.html)
   - Broswer의 Webkit jsc 취약점 분석 및 공격 연구
+- HunterJW [Link](/2019/08/01/HunterJW.html)
+  - BugBounty 활동
 
 ## contact
 
