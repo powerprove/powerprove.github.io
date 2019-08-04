@@ -3,40 +3,111 @@ title: About Me
 ---
 
 <div class="row">
-  <div class="col-xs-12 col-sm-4">
-    <div class="row">
-      <div class="col-xs-12 text-center">
-        {% if site.author.avatar %}
-          {% if site.author.avatar contains "//" %}
-            {% capture avatar %}{{ site.author.avatar }}{% endcapture %}
-          {% else %}
-            {% capture avatar %}{{ site.author.avatar | prepend: site.baseurl }}{% endcapture %}
-          {% endif %}
-          <img class="img-responsive img-rounded" src="{{ avatar }}">
-        {% else %}
-          <h1 class="poorman-thumbnail" style="background: #48c;">
-            {{ site.author.name | truncate: 1, '' }}
-          </h1>
-        {% endif %}
-      </div>
-      <div class="col-xs-12 text-center">
-        <h4 class="hidden-xs">Find Me On</h4>
-        <ul class="list-inline">
-        {% for social in site.author.socials %}
-          {% if social[1] %}
-            <li>
-              <a href="{{ social | last }}">
-                <i class="fa fa-lg fa-{{ social | first }}"></i>
-              </a>
-            </li>
-          {% endif %}
-        {% endfor %}
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="col-xs-12 col-sm-8">
-    <h2>{{ site.author.name }}</h2>
-    {{ site.author.profile | markdownify }}
-  </div>
+  <h1> <i class="fas fa-hdd"></i> About Me </h1>
+  <hr>
+
+  <h2> <i class="fas fa-user-circle"></i> &nbsp; Intro </h2>
+  <ul style="color: black; font-size: 1em;">
+      <p style="margin-top:1.5em"> 
+          <i class="far fa-address-book"></i> &nbsp; powerprove 
+      </p>
+      <p style="margin-top:1em"> 
+          <i class="fas fa-globe-asia"></i> &nbsp;  Republic of Korea 
+      </p>
+      <p style="margin-top:1em"> 
+          <i class="far fa-flag"></i> &nbsp; Member of NULL@ROOT
+      </p>
+      <p style="margin-top:1em"> 
+          <i class="fas fa-university"></i> &nbsp; Catholic university
+      </p>
+      <p style="margin-top:1em">
+          <i class="fas fa-laptop"></i> &nbsp; Cybersecurity pwner
+      </p>
+      <p style="margin-top:1em">
+          <i class="far fa-envelope"></i> &nbsp; blanknhide@naver.com
+      </p>
+  </ul>
+
+  <hr style="margin-top: 3em;">
+  <h2> <i class="fas fa-vials"></i> &nbsp; Project </h2>
+
+  <h4 style="margin-left:1em; margin-top:2em;"> <i class="fas fa-vial"></i> &nbsp; HowToBroswer </h4>
+  <ul style="color: black; font-size: 1em; margin: 1em;">
+      <p style="margin-top:1.5em"> 
+          <i class="fas fa-hourglass-end"></i> &nbsp; 
+          <i style="color: gray;"> 2019.1 ~ 2019.4  </i>
+      </p>
+      <p style="margin-top:1em"> 
+        <i class="fas fa-indent"></i> &nbsp; 
+        <i style="color: gray;"> Webkit exploit analyze and study </i>
+      </p>
+      <p style="margin-top:1em"> 
+          <i class="fas fa-users"></i> &nbsp; 
+          <i style="color: gray;"> cheese, powerprove, LiLi, y0ny0ns0n </i>
+      </p>
+      <p style="margin-top:1em"> 
+          <i class="fas fa-search"></i> &nbsp; 
+          <a style="color: gray;" href="/2019/04/10/howtobrowser.html"> Link</a>
+      </p>
+  </ul>
+
+  <h4 style="margin-left:1em; margin-top:2em;"> <i class="fas fa-vial"></i> &nbsp; HunterJW </h4>
+  <ul style="color: black; font-size: 1em; margin: 1em;">
+      <p style="margin-top:1.5em"> 
+          <i class="fas fa-hourglass-end"></i> &nbsp; 
+          <i style="color: gray;"> 2019.5 ~ 2019.7  </i>
+      </p>
+      <p style="margin-top:1em"> 
+        <i class="fas fa-indent"></i> &nbsp; 
+        <i style="color: gray;"> Bugbounty activity </i>
+      </p>
+      <p style="margin-top:1em"> 
+          <i class="fas fa-user-friends"></i> &nbsp; 
+          <i style="color: gray;"> powerprove, P4rkJW</i>
+      </p>
+      <p style="margin-top:1em"> 
+          <i class="fas fa-search"></i> &nbsp; 
+          <a style="color: gray;" href="/2019/08/01/HunterJW.html"> Link</a>
+      </p>
+  </ul>
+
+  <hr style="margin-top: 3em;">
+  <h2> <i class="fas fa-trophy"></i> &nbsp; Award </h2>
+
+  <h4 style="margin-left:1em; margin-top:2em;"> 
+      <i class="fas fa-medal"></i> &nbsp; 2017 Hust Festival 2th
+      <i style="color: gray; font-size: 0.4em;"> &nbsp; 2017</i>
+  </h4>
+  <h4 style="margin-left:1em; margin-top:1.3em;"> 
+      <i class="fas fa-medal"></i> &nbsp; KISA 보안경진대회 4회 은상
+      <i style="color: gray; font-size: 0.4em;"> &nbsp; 2017</i>
+  </h4>
+  <h4 style="margin-left:1em; margin-top:1.3em;"> 
+      <i class="fas fa-medal"></i> &nbsp; 사이버 가디언즈 화이트 해커 리그 4위상
+      <i style="color: gray; font-size: 0.4em;"> &nbsp; 2017</i>
+  </h4>
+
+  <hr style="margin-top: 3em;">
+  <h2> <i class="fas fa-award"></i>&nbsp; Contest </h2>
+
+  <h4 style="margin-left:1em; margin-top:1.3em;"> 
+      <i class="fas fa-star"></i> &nbsp; 2017 코드게이트 대학생부 본선
+      <i style="color: gray; font-size: 0.4em;"> &nbsp; 2017</i>
+  </h4>
+  <h4 style="margin-left:1em; margin-top:1.3em;"> 
+      <i class="fas fa-star"></i> &nbsp; 2017 화이트햇 콘테스트 WITHCON 본선
+      <i style="color: gray; font-size: 0.4em;"> &nbsp; 2017</i>
+  </h4>
+  <h4 style="margin-left:1em; margin-top:1.3em;"> 
+      <i class="fas fa-star"></i> &nbsp; 2017 사이버 공격 방어 대회 본선 (red team)
+      <i style="color: gray; font-size: 0.4em;"> &nbsp; 2017</i>
+  </h4>
+  <h4 style="margin-left:1em; margin-top:1.3em;"> 
+      <i class="fas fa-star"></i> &nbsp; 2018 코드게이트 대학생부 본선
+      <i style="color: gray; font-size: 0.4em;"> &nbsp; 2018</i>
+  </h4>
+  <h4 style="margin-left:1em; margin-top:1.3em;"> 
+      <i class="fas fa-star"></i> &nbsp; 2018 삼성 CTF 본선
+      <i style="color: gray; font-size: 0.4em;"> &nbsp; 2018</i>
+  </h4>
 </div>

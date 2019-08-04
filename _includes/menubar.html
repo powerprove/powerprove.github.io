@@ -12,10 +12,10 @@
     </li>
     <li {% if page.url == "/writeup.html" %}class="active"{% endif %}>
       <a href="{{ site.baseurl }}/writeup.html">
-        <i class="fa fa-fw fa-archive"></i>
+        <i class="fa fa-fw fa-flag"></i>
         Writeup
         <span class="badge hidden-xs pull-right">
-          {{ site.ctfs | size }}
+          {{ site.categories.2019 | size }}
         </span>
       </a>
     </li>
@@ -42,8 +42,8 @@
         </span>
       </a>
     </li>
-    <li {% if page.url == "/2019/04/09/powerprove.html" %}class="active"{% endif %}>
-      <a href="{{ site.baseurl }}/2019/04/09/powerprove.html">
+    <li {% if page.url == "about.html" %}class="active"{% endif %}>
+      <a href="{{ site.baseurl }}/about.html">
         <i class="fa fa-fw fa-user"></i>
         About Me
       </a>
