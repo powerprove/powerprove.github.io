@@ -1,5 +1,5 @@
 ---
-title: N1CTF warmup write up
+title: N1CTF babypwn write up
 categories: [2019, N1CTF]
 tags: [CTF, pwn, heap]
 ---
