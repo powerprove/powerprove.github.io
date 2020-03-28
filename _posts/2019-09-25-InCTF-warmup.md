@@ -1,6 +1,6 @@
 ---
 title: InCTF warmup write up
-categories: [2019, InCTF]
+categories: [2019, InCTF, new]
 tags: [CTF, window, fsb, bof, easy]
 ---
 

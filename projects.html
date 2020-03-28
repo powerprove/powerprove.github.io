@@ -20,15 +20,12 @@ title: Projects
       {% else %}
         {% capture thumbnail %}{{ project.thumbnail | prepend: site.baseurl }}{% endcapture %}
       {% endif %}
-      <img class="img-responsive img-rounded" src="{{ thumbnail }}">
     {% else %}
-      <h1 class="poorman-thumbnail"
-          style="background: {% cycle 'c': "#48c", "#fa4", "#5b5", "#d54" %};">
-        {{ project.name | truncate: 1, '' }}
-      </h1>
+
     {% endif %}
     </div>
   </div>
+  <div class="clearfix"></div>
   <div class="col-xs-8">
     <p>
       {% if project.date %}
