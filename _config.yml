@@ -31,7 +31,21 @@ paginate: 10
 
 # system variables, do not change unless you knew what's it does.
 paginate_path: page/:num
+
+
 markdown: kramdown
+kramdown:
+  input:          GFM
+  syntax_highlighter: rouge
+
+  syntax_highlighter_opts:
+    css_class: 'highlight'
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
+
 redcarpet:
   extensions: ["tables"]
 
