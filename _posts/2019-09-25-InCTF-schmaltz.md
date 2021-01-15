@@ -1,6 +1,6 @@
 ---
 title: InCTF schmaltz write up
-categories: [2019, InCTF, new]
+categories: [2019, InCTF ]
 tags: [CTF, heap, 18.10, tcache]
 ---
 

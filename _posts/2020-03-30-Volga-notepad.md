@@ -1,6 +1,6 @@
 ---
 title: volgaCTF notepadd write up
-categories: [2020, volga, new]
+categories: [2020, volga ]
 tags: [CTF, linux, heap, baby]
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: holyshield babyheap write up
-categories: [2019, holyshield, new]
+categories: [2019, holyshield ]
 tags: [CTF, linux, heap, baby]
 ---
 
